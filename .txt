@@ -1,0 +1,23 @@
+component : 
+    + header
+    + backround
+    + contact
+    + main 
+    + register
+    + login
+    + footer
+
+
+
+pages :
+    + home : nữ
+    + nam
+    + trẻ em
+    + register
+    + login
+
+
+global valiable
+    + --color-black
+    + --color-white
+    + --color-red
