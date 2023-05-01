@@ -22,6 +22,8 @@ import { SearchResultComponent } from './components/search-result/search-result.
 import { CategoriesComponent } from './components/categories/categories.component';
 import { AccountComponent } from './components/account/account.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import '@angular/localize/init';
 
 
 
@@ -51,6 +53,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

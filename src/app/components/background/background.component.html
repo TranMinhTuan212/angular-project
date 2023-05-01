@@ -1,32 +1,17 @@
-<!-- <div class="background">
-    <div class="background-wrapper"><img stt="1" class="background-item" src="../../../assets/storage/image/forest.jpg" alt=""></div>
-    <div class="background-wrapper"><img stt="2" class="background-item d-none" src="../../../assets/storage/image/nature.jpg" alt=""></div>
-    <div class="background-wrapper"><img stt="3" class="background-item d-none" src="../../../assets/storage/image/tiger.jpg" alt=""></div>
-    <div class="background-wrapper"><img stt="4" class="background-item d-none" src="../../../assets/storage/image/wedding.jpg" alt=""></div>
-    <div class="background-wrapper"><img stt="5" class="background-item d-none" src="../../../assets/storage/image/beach.jpg" alt=""></div>
-    <div class="background-wrapper"><img stt="6" class="background-item d-none" src="../../../assets/storage/image/men.jpg" alt=""></div>
-    <div class="prev redirective"><i class="fa-solid fa-chevron-left"></i></div>
-    <div class="next redirective"><i class="fa-solid fa-chevron-right"></i></div>
-</div> -->
-
-
 
 
   <div class="background">
     <ngb-carousel
 	#carousel
 	[interval]="1000"
-	[pauseOnHover]="pauseOnHover"
-	[pauseOnFocus]="pauseOnFocus"
-	(slide)="onSlide($event)"
 >
 	<ng-template ngbSlide *ngFor="let img of images; index as i">
 		<div class="carousel-caption">
 			<h3>My slide {{i + 1}} title</h3>
 		</div>
 		<a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
-			<div class="picsum-img-wrapper">
-				<img [src]="img" alt="My image {{i + 1}} description" />
+			<div class="picsum-img-wrapper" >
+				<img class="background-item" [src]="img" alt="My image {{i + 1}} description" />
 			</div>
 		</a>
 	</ng-template>
