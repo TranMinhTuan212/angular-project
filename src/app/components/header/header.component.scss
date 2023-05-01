@@ -1,0 +1,56 @@
+.header{
+    background-color: var(--color-black);
+    padding: 1rem 1rem 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-right: 14rem;
+}
+
+.search{
+    
+    width: 30%;
+}
+
+.inner{
+    display: flex;
+}
+
+.button-icon{
+    color: var(--color-white);
+    padding: .4rem ;
+    margin-left: 1.6rem;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-hover);
+    }
+}
+
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.category{
+    color: var(--color-white);
+}
+
+.account{
+    color: var(--color-white);
+}
+

@@ -1,0 +1,15 @@
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-item{
+    padding: .4rem 0;
+    margin-left: 4rem;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-hover);
+    }
+}

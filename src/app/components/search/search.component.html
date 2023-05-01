@@ -1,0 +1,19 @@
+
+      <div class="search">
+        <input [(ngModel)]="content" (focus)="show()" (blur)="hiden()" type="text" class="search-input" placeholder="Tìm kiếm">
+        <div class="close-icon" (click)="resertInput()">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="btn-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div *ngIf="isVisable" class="tooltips">
+            <app-search-result></app-search-result>
+            <app-search-result></app-search-result>
+            <app-search-result></app-search-result>
+            <app-search-result></app-search-result>
+            <app-search-result></app-search-result>
+            <app-search-result></app-search-result>
+        </div>
+      </div>
