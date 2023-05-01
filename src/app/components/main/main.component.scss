@@ -1,0 +1,72 @@
+.p-3{
+  border: 0.2rem solid black;
+  position: relative;
+  overflow:hidden;
+  height: 120px;  
+}
+.p-3 a{
+color: var(--color-black);
+text-decoration: none;
+font-size: 20px;
+font-family: 'SVN-Gilroy Med';
+}
+.image_main{
+  padding-right: 30px;
+  padding-top: 10px;
+}
+.hot{
+  position: absolute;
+  top: -12px;
+  right: -25px;
+  transform: rotate(45deg);
+  padding: 20px 20px 0;
+  background: #f96e17;
+  font-size: 14px;
+  font-family: 'SVN-Gilroy Bold';
+  color: var(--color-black);
+}
+.banner{
+  padding-top: 0.5rem;
+}
+.img_main{
+  height: 100%;
+  width: 100%;
+}
+.banner-page img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px #000;
+  backdrop-filter: blur(5px);
+}
+.banner-main{
+  padding: 1rem;
+}
+.banner-page{
+position: relative;
+overflow: hidden;
+}
+.detail{
+  position: absolute;
+  border-radius: 5%;
+  background: #1f3d4738;
+  top: 0;
+  right: -98%;
+  width: 98%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  transition: 1s;
+}
+.see-item{
+  margin-top: 50rem;
+  border: 2px solid #000;
+  padding: 10px 50px;
+  border-radius: 5%;
+  text-decoration: none;
+  color: var(--color-black);
+  background: green;
+  line-height: 13rem;
+}
+.banner-page:hover .detail{
+  right: 0;
+}
