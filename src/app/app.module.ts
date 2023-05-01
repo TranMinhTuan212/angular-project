@@ -16,6 +16,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ChildrenComponent } from './pages/children/children.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SearchComponent } from './components/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { SearchResultComponent } from './components/search-result/search-result.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { AccountComponent } from './components/account/account.component';
+
+
 
 @NgModule({
   declarations: [
@@ -33,10 +40,15 @@ import { LoginComponent } from './pages/login/login.component';
     RegisterComponent,
     ChildrenComponent,
     LoginComponent,
+    SearchComponent,
+    SearchResultComponent,
+    CategoriesComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

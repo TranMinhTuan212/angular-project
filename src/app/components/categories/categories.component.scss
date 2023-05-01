@@ -1,0 +1,23 @@
+.category{
+
+}
+
+.category-content{
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-item{
+    margin-right: 4rem;
+}
+
+.link{
+    color: var(--color-white);
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-hover);
+    }
+}

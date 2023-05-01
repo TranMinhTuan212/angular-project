@@ -1,24 +1,31 @@
-
 <header class="header">
   <div class="container">
 
 
     <nav class="top-header">
       <div class="logo">
-        <img class="logo-icon" src="//bizweb.dktcdn.net/100/438/408/themes/904142/assets/logo.svg?1682840591373" alt="">
+        <img src="//bizweb.dktcdn.net/100/438/408/themes/904142/assets/logo.svg?1682840591373" alt="">
       </div>
       <div class="search">
-        <input type="text" class="search-input" placeholder="Tìm kiếm">
-        <div class="close-icon"></div>
-        <div class="btn-search">
-        </div>
+        <app-search></app-search>
       </div>
       <div class="inner">
-        <button>Đăng nhập</button></div>
+        <div class="button-icon"><i class="fa-solid fa-location-dot"></i> GPS</div>
+        <div class="button-icon"><i class="fa-solid fa-phone"></i> Phone</div>
+        <div class="button-icon"><i class="fa-brands fa-facebook"></i> Facebook</div>
+      </div>
     </nav>
 
 
-    <!-- <nav class="bottom-header"></nav> -->
+    <nav class="bottom-header">
+      <div class="category">
+        <app-categories></app-categories>
+      </div>
+
+      <div class="account">
+        <app-account></app-account>
+      </div>
+    </nav>
   </div>
 </header>
 
@@ -26,31 +33,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/women">Women</a></li>
-    <li><a routerLink="/men">Men</a></li>
-    <li><a routerLink="/children">Children</a></li>
-    <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/register">Register</a></li>
-  </ul>
-</nav>
-
-<router-outlet></router-outlet> -->

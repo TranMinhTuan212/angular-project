@@ -1,6 +1,6 @@
 .header{
     background-color: var(--color-black);
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .top-header{
@@ -10,29 +10,41 @@
 }
 
 .logo{
-
-}
-
-.logo-icon{
-
+    padding-right: 14rem;
 }
 
 .search{
-    width: 30%;
-    background-color: #fff;
-    padding: .6rem 2rem;
-    height: 4rem;
-    border-radius: 3rem;
-}
-
-.search-input{
-    width: 100%;
-}
-
-.close-icon{
     
+    width: 30%;
 }
 
-.btn-search{
-
+.inner{
+    display: flex;
 }
+
+.button-icon{
+    color: var(--color-white);
+    padding: .4rem ;
+    margin-left: 1.6rem;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-hover);
+    }
+}
+
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.category{
+    color: var(--color-white);
+}
+
+.account{
+    color: var(--color-white);
+}
+
