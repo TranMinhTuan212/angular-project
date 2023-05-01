@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchResultComponent } from './components/search-result/search-result.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { AccountComponent } from './components/account/account.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -48,7 +49,8 @@ import { AccountComponent } from './components/account/account.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
