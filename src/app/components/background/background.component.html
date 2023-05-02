@@ -4,6 +4,7 @@
     <ngb-carousel
 	#carousel
 	[interval]="3000"
+	(slide)="onSlide($event)"
 >
 	<ng-template ngbSlide *ngFor="let img of images; index as i">
 		<div class="carousel-caption">
