@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<div class="contact" (click)="toggleMessage()">
+    <i class="fa-solid fa-comments text-white fs-1 message-icon"></i>
+    <div #contact class="message d-none" (click)="stopPropagation($event)">
+        <div class="message-content">
+            <div class="message-header">
+                <div class="message-img">
+                    TMT
+                </div>
+                Liên hệ shop ngay !!
+
+                <div (click)="toggleMessage()" class="btn-close"></div>
+            </div>
+            <div class="message-main">
+                <div class="shop">
+                    <div class="shop-message">
+                        Bạn có thắc mắc cần hỗ trợ ?
+                    </div>
+                    <div class="shop-avt">
+                        <img class="avt" src="../../../assets/storage/image/ao1.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="client" *ngFor="let message of messages">
+                    <div class="shop-avt me-3 client-avt">
+                        TMT
+                    </div>
+                    <div class="shop-message">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+            <div class="message-footer">
+                <input #keyPress #message class="message-input" type="text">
+                <button (click)="addMessage(message)" class="btn fs-3"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

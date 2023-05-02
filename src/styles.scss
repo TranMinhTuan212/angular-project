@@ -36,5 +36,12 @@ li, [href] {
   list-style: none;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+button {
+  outline: none;
+
+  &:active{
+    border: none;
+    outline: none;
+  }
+}
+

@@ -1,0 +1,147 @@
+.contact {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  z-index: 999;
+  border-radius: 50%;
+  background-color: #2c67e4;
+  cursor: pointer;
+}
+
+.message-icon {
+  line-height: 6rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.message {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background-color: #f6f6f6;
+  width: 30rem;
+  height: 40rem;
+  padding: 1rem;
+  box-shadow: 0 0 1rem #ccc;
+}
+
+.message-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+.message-header {
+  padding: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.message-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #08b4d6;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  display: inline-block;
+}
+
+.message-main {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  bottom: 4.4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.message-main::-webkit-scrollbar {
+  width: .6rem; /* Độ rộng của thanh cuộn */
+}
+
+.message-main::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Màu nền của track */
+  border-radius: 5px; /* Bo góc của track */
+}
+
+.message-main::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Màu nền của phần thumb của thanh cuộn */
+  border-radius: 5px; /* Bo góc của thumb */
+}
+
+.shop {
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+.client {
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.client-avt{
+    background-color: #08b4d6;
+    color: #fff;
+    line-height: 2.2rem;
+}
+
+.shop-message {
+  width: 60%;
+}
+
+.shop-avt {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.message-footer {
+  position: absolute;
+  height: 4.4rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  padding: 0.6rem;
+  align-items: center;
+}
+
+.avt {
+  width: 100%;
+  height: 100%;
+}
+
+.message-input {
+  width: 86%;
+  background-color: #fff;
+  border-radius: 1.4rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
