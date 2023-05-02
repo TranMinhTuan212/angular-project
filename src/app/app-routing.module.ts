@@ -8,8 +8,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ChildrenComponent } from './pages/children/children.component';
 
 const routes: Routes = [
-  {path: 'women', component: HomeComponent},
-  {path: '', component: MenComponent},
+  {path: '', component: HomeComponent},
+  {path: 'men', component: MenComponent},
   {path: 'women', component: WomenComponent},
   {path: 'children', component: ChildrenComponent},
   {path: 'login', component: LoginComponent},

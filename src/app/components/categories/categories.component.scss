@@ -12,10 +12,16 @@
 }
 
 .link{
-    color: var(--color-white);
+    color: var(--color-black);
     cursor: pointer;
 
     &:hover{
         color: var(--color-hover);
     }
+}
+
+.activeRoute{
+  display: block;
+  color: var(--color-hover) !important;
+  border-bottom: .1rem solid var(--color-hover);
 }

@@ -1,12 +1,11 @@
 .header{
-    background-color: var(--color-black);
+    background-image: url('../../../assets/storage/image/background-header.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1rem 1rem 0 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: rgba(0, 0, 0, .7);
     z-index: 2;
+    box-shadow: 0 0 1rem #201f1f;
 }
 
 .top-header{
@@ -20,7 +19,8 @@
 }
 
 .search{
-    
+    position: relative;
+    z-index: 3;
     width: 30%;
 }
 
@@ -29,7 +29,6 @@
 }
 
 .button-icon{
-    color: var(--color-white);
     padding: .4rem ;
     margin-left: 1.6rem;
     cursor: pointer;
@@ -47,10 +46,15 @@
 }
 
 .category{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .account{
-    color: var(--color-white);
+    color: var(--color-black);
 }
+
+::ng-deep .tooltip-inner {
+    font-size: 16px;
+    padding: 1rem;
+  }
 

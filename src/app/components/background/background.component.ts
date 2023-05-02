@@ -10,12 +10,8 @@ import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 export class BackgroundComponent {
 
   images = [
-    'forest.jpg',
-    'nature.jpg',
-    'tiger.jpg',
-    'wedding.jpg',
-    'beach.jpg',
-    'men.jpg',
+    'slider_1.jpg',
+    'slider_2.jpg',
   ].map((n) => `../../../assets/storage/image/${n}`);
 
   paused = false;
