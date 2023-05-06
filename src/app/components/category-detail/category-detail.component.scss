@@ -1,0 +1,28 @@
+.box{
+    position: absolute;
+    width: 130.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem #ccc;
+    z-index: 999;
+    padding: 2rem;
+    color: black;
+    left: 0;
+    top: 100%;
+}
+
+.box-container{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+}
+
+.topic{
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.item{
+    padding: .4rem 0;
+    font-size: 1.4rem;
+}
+

@@ -24,6 +24,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import '@angular/localize/init';
+import { CategoryDetailComponent } from './components/category-detail/category-detail.component';
+
+
 
 
 
@@ -47,13 +50,14 @@ import '@angular/localize/init';
     SearchResultComponent,
     CategoriesComponent,
     AccountComponent,
+    CategoryDetailComponent,
   ],
   imports: [
     AppRoutingModule,
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
-    NgbCollapseModule
+    NgbCollapseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

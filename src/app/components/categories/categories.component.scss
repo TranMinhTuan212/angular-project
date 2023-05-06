@@ -11,6 +11,16 @@
     margin-right: 4rem;
 }
 
+.box{
+    z-index: 999;
+    display: none;
+    animation: showBox .3s ease-in;
+}
+
+.category-item:hover .box{
+    display: block;
+}
+
 .link{
     color: var(--color-black);
     cursor: pointer;
@@ -24,4 +34,13 @@
   display: block;
   color: var(--color-hover) !important;
   border-bottom: .1rem solid var(--color-hover);
+}
+
+@keyframes showBox{
+    from{opacity: 0;
+    transform-origin: 20% 20%;
+    }
+    to{opacity: 1;
+        transform-origin: 100% 100%;
+    }
 }
