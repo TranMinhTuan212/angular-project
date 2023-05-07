@@ -85,11 +85,16 @@
     padding: 1rem;
     border-bottom: .1rem solid #ccc;
     margin-bottom: 3rem;
+    font-size: 2rem;
   }
 
   .category-item{
-    padding: 1rem;
+    padding: .4rem;
     margin-bottom: .6rem;
+  }
+
+  .link{
+    font-size: 1.4rem;
   }
 
   .activeRoute {
