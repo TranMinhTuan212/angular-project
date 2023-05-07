@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-account',
@@ -6,5 +6,11 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent {
+
+  @Output() closeAccount = new EventEmitter();
+
+  close(): void {
+    this.closeAccount.emit();
+  }
 
 }

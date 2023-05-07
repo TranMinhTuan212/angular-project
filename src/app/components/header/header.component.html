@@ -33,7 +33,7 @@
 
       <div #menuUser (click)="showAccount()" class="menu-user"><app-button [leftIcon]="'fa-solid fa-user'"></app-button></div>
       <div #account class="account">
-        <app-account></app-account>
+        <app-account (closeAccount)="hidenAccount()"></app-account>
       </div>
     </nav>
   </div>
