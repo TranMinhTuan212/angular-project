@@ -1,0 +1,54 @@
+button{
+    background-color: transparent;
+    padding: .4rem 0;
+    cursor: pointer;
+    padding: .6rem 1.4rem;
+
+    &:hover{
+        opacity: .6;
+    }
+}
+
+.left-icon{
+    margin-right: .8rem;
+}
+
+.right-icon{
+    margin-left: .8rem;
+}
+
+.primary{
+    background-color: red;
+    color: #fff;
+    border-radius: .6rem;
+}
+
+.warning{
+    background-color: #ffc107;
+    color: #fff;
+    border-radius: .6rem;
+}
+
+.outline{
+    border: solid .2rem red;
+    background-color: transparent;
+    color: red;
+    border-radius: .6rem;
+}
+
+
+// tablet
+@media (max-width: 1199px) and (min-width: 740px){
+    .large{
+        font-size: 2.6rem;
+    }
+}
+
+
+// mobile
+@media (max-width: 739px) {
+    .large{
+        font-size: 1.4rem;
+    }
+}
+

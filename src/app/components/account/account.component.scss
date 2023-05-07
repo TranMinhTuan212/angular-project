@@ -5,12 +5,46 @@
 }
 
 .account-item{
-    padding: .4rem 0;
-    margin-left: 4rem;
-    cursor: pointer;
-    font-size: 1.4rem;
+    margin-right: 1rem;
+}
 
-    &:hover{
-        opacity: .6;
+.user{
+    display: none;
+}
+
+// tablet
+@media (max-width: 1199px) and (min-width: 740px){
+  
+    .user{
+        font-size: 3rem;
+    }
+}
+
+// mobile
+@media (max-width: 739px) {
+
+    .user{
+        font-size: 2rem;
+    }
+}
+
+// general
+@media (max-width: 1199px) {
+    .account{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .account-item{
+        float: left;
+        margin-bottom: 2rem;
+    }
+
+    .user{
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 1rem 0;
+        border-bottom: solid .1rem #ccc;
     }
 }

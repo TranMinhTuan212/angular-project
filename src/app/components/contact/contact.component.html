@@ -31,7 +31,8 @@
             </div>
             <div class="message-footer">
                 <input #keyPress #message class="message-input" type="text">
-                <button (click)="addMessage(message)" class="btn fs-3"><i class="fa-solid fa-paper-plane"></i></button>
+                <app-button [size]="'large'" [leftIcon]="'fa-solid fa-paper-plane'"></app-button>
+                <!-- <button (click)="addMessage(message)" class="btn fs-3"><i class="fa-solid fa-paper-plane"></i></button> -->
             </div>
         </div>
     </div>

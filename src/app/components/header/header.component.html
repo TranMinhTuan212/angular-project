@@ -10,14 +10,14 @@
         <app-search></app-search>
       </div>
       <div class="inner">
-        <div class="me-2 inner-item" placement="bottom" ngbTooltip="Vị trí">
-          <div class="button-icon"><i class="fa-solid fa-location-dot"></i> GPS</div>
+        <div class="me-2 inner-item">
+          <app-button [style]="''" [tooltip]="'Vị trí'" [text]="'GPS'" [leftIcon]="'fa-solid fa-location-dot'"></app-button>
         </div>
-        <div class="me-2 inner-item" placement="bottom" ngbTooltip="Điện thoại" >
-          <div class="button-icon"><i class="fa-solid fa-phone"></i> Phone</div>
+        <div class="me-2 inner-item" >
+          <app-button [style]="''" [tooltip]="'Điện thoại'" [text]="'Phone'" [leftIcon]="'fa-solid fa-phone'"></app-button>
         </div>
-        <div class="me-2 inner-item" placement="bottom" ngbTooltip="Phây búc">
-          <div class="button-icon"><i class="fa-brands fa-facebook"></i> Facebook</div>
+        <div class="me-2 inner-item">
+          <app-button [style]="''" [tooltip]="'Phây búc'" [text]="'Facebook'" [leftIcon]="'fa-brands fa-facebook'"></app-button>
       </div>
       </div>
     </nav>
@@ -25,16 +25,21 @@
 
 
     <nav class="bottom-header">
-      <div class="category">
+
+      <div #menuCategory (click)="showCategory()" class="menu-category"><app-button [leftIcon]="'fa-solid fa-bars'"></app-button></div>
+      <div #category class="category">
         <app-categories></app-categories>
       </div>
 
-      <div class="account">
+      <div #menuUser (click)="showAccount()" class="menu-user"><app-button [leftIcon]="'fa-solid fa-user'"></app-button></div>
+      <div #account class="account">
         <app-account></app-account>
       </div>
     </nav>
   </div>
 </header>
+
+<div #menuDark (click)="hidenAccount()" class="menu-dark d-none"></div>
 
 
 

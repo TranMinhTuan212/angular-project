@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import '@angular/localize/init';
 import { CategoryDetailComponent } from './components/category-detail/category-detail.component';
+import { ButtonComponent } from './components/button/button.component';
 
 
 
@@ -51,6 +52,7 @@ import { CategoryDetailComponent } from './components/category-detail/category-d
     CategoriesComponent,
     AccountComponent,
     CategoryDetailComponent,
+    ButtonComponent,
   ],
   imports: [
     AppRoutingModule,
