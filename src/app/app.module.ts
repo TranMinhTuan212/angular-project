@@ -24,9 +24,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import '@angular/localize/init';
+<<<<<<< HEAD
 import { MainItemComponent } from './components/main-item/main-item.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MainSPComponent } from './main-sp/main-sp.component';
+=======
+import { CategoryDetailComponent } from './components/category-detail/category-detail.component';
+import { ButtonComponent } from './components/button/button.component';
+
+
+>>>>>>> 44f6e685b5920a5a7756d187af872dba5fb1e162
 
 
 
@@ -50,9 +57,14 @@ import { MainSPComponent } from './main-sp/main-sp.component';
     SearchResultComponent,
     CategoriesComponent,
     AccountComponent,
+<<<<<<< HEAD
     MainItemComponent,
     MainSPComponent,
     
+=======
+    CategoryDetailComponent,
+    ButtonComponent,
+>>>>>>> 44f6e685b5920a5a7756d187af872dba5fb1e162
   ],
   imports: [
     AppRoutingModule,
@@ -60,7 +72,10 @@ import { MainSPComponent } from './main-sp/main-sp.component';
     NgbModule,
     BrowserAnimationsModule,
     NgbCollapseModule,
+<<<<<<< HEAD
     CarouselModule
+=======
+>>>>>>> 44f6e685b5920a5a7756d187af872dba5fb1e162
   ],
   providers: [],
   bootstrap: [AppComponent]

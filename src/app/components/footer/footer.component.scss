@@ -11,6 +11,7 @@
 
 .input-footer{
     width: 70%;
+    height: 2.8rem;
     margin-right: .4rem;
     border-radius: .4rem;
 }
@@ -50,5 +51,37 @@
     &:hover{
         color: var(--color-hover);
         margin-left: .3rem;
+    }
+}
+
+.author{
+    text-align: center;
+    color: var(--color-white);
+    margin-top: 1rem;
+}
+
+// tablet
+@media (max-width: 1199px) and (min-width: 740px) {
+
+    .contact-item{
+        margin-right: 1rem;
+    }
+
+    .input-footer{
+        width: 60%;
+        height: 2.7rem;
+    }
+}
+
+// mobile
+@media (max-width: 739px){
+
+    .input-footer{
+        height: 2.7rem;
+    }
+
+    .font{
+        text-align: center;
+        border-bottom: solid .1rem #ccc;
     }
 }

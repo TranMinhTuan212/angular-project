@@ -76,7 +76,7 @@
 }
 
 .message-main::-webkit-scrollbar {
-  width: .6rem; /* Độ rộng của thanh cuộn */
+  width: 0.6rem; /* Độ rộng của thanh cuộn */
 }
 
 .message-main::-webkit-scrollbar-track {
@@ -105,10 +105,10 @@
   padding: 1rem;
 }
 
-.client-avt{
-    background-color: #08b4d6;
-    color: #fff;
-    line-height: 2.2rem;
+.client-avt {
+  background-color: #08b4d6;
+  color: #fff;
+  line-height: 2.2rem;
 }
 
 .shop-message {
@@ -144,4 +144,70 @@
   border-radius: 1.4rem;
   padding: 0.6rem;
   font-size: 1rem;
+}
+
+// tablet
+@media (max-width: 1199px) and (min-width: 740px) {
+  .message {
+    width: 40rem;
+    height: 60rem;
+  }
+
+  .message-footer {
+    height: 6rem;
+    left: 0;
+    right: 0;
+  }
+
+  .message-input {
+    width: 86%;
+    padding: 0.6rem;
+    font-size: 1.6rem;
+    height: 100%;
+  }
+
+  .message-main {
+    bottom: 6.4rem;
+  }
+
+  .btn{
+    font-size: 1.6rem;
+  }
+}
+
+
+// mobile
+@media (max-width: 739px) {
+
+  .contact {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .message {
+    width: 80vw;
+    height: 70vh;
+  }
+
+  .message-input{
+    font-size: 1.4rem;
+  }
+}
+
+// general
+@media (max-width: 1199px) {
+
+  .shop-message {
+    font-size: 1.4rem;
+  }
+
+  .shop-avt {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .client-avt {
+    line-height: 3rem;
+    text-align: center;
+  }
 }

@@ -1,0 +1,71 @@
+<div class="box">
+        <div class="box-container">
+            <div class="shirt col-md-3">
+                <div *ngIf="type === 'nu'">
+                    <div class="topic">ÁO NỮ</div>
+                </div>
+                <div *ngIf="type === 'nam'">
+                    <div class="topic">ÁO NAM</div>
+                </div>
+                <div *ngIf="type === 'tre-em'">
+                    <div class="topic">ÁO TRẺ EM</div>
+                </div>
+                <div class="item">Áo Polo</div>
+                <div class="item">Áo Thun</div>
+                <div class="item">Áo Khoác</div>
+                <div class="item">Áo Sơ Mi</div>
+                <div class="item">Áo Chống Nắng</div>
+                <div class="item">Áo Len</div>
+                <div class="item">Áo Ni</div>
+            </div>
+            <div class="trousers col-md-3">
+                <div *ngIf="type === 'nu'">
+                    <div class="topic">QUẦN NỮ</div>
+                </div>
+                <div *ngIf="type === 'nam'">
+                    <div class="topic">QUẦN NAM</div>
+                </div>
+                <div *ngIf="type === 'tre-em'">
+                    <div class="topic">QUẦN TRẺ EM</div>
+                </div>
+                <div class="item">Quần Jeans</div>
+                <div class="item">Quần Kaki</div>
+                <div class="item">Quần Âu</div>
+                <div class="item">Quần Short</div>
+                <div class="item">Quần Ni</div>
+                <div class="item">Quần Thể Thao</div>
+                <div class="item">Áo Ni</div>
+            </div>
+            <div class="out-standing col-md-3">
+                <div class="topic">NỔI BẬT</div>
+                <div *ngIf="type === 'nu'">
+                    <div *ngFor="let product of productNu">
+                        <app-search-result [product]="product"></app-search-result>
+                      </div>
+                </div>
+
+                <div *ngIf="type === 'nam'">
+                    <div *ngFor="let product of productNam">
+                        <app-search-result [product]="product"></app-search-result>
+                      </div>
+                </div>
+
+                <div *ngIf="type === 'tre-em'">
+                    <div *ngFor="let product of productTreEm">
+                        <app-search-result [product]="product"></app-search-result>
+                      </div>
+                </div>
+            </div>
+            <div class="picture col-md-3">
+                <div *ngIf="type === 'nu'">
+                    <img class="img-fluid" src="../../../assets/storage/image/out-standing-nu.webp" alt="">
+                </div>
+                <div *ngIf="type === 'nam'">
+                    <img class="img-fluid" src="../../../assets/storage/image/out-standing-nam.webp" alt="">
+                </div>
+                <div *ngIf="type === 'tre-em'">
+                    <img class="img-fluid" src="../../../assets/storage/image/out-standing-tre-em.webp" alt="">
+                </div>
+            </div>
+        </div>
+</div>

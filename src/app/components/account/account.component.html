@@ -1,13 +1,16 @@
 <div class="account">
-    <div class="account-item">
-        <i class="fa-solid fa-cart-shopping"></i> Cart
+
+    <div class="user">Tài Khoản</div>
+    
+    <div (click)="close()" class="account-item">
+        <app-button [size]="'large'" [tooltip]="'Giỏ hàng'" [text]="'Cart'" [leftIcon]="'fa-solid fa-cart-shopping'"></app-button>
     </div>
 
-    <div class="account-item">
-        <i class="fa-solid fa-right-to-bracket"></i> Login
+    <div (click)="close()" class="account-item">
+        <app-button [size]="'large'" [tooltip]="'Đăng nhập'" [text]="'Login'" [leftIcon]="'fa-solid fa-right-to-bracket'"></app-button>
     </div>
 
-    <div class="account-item">
-        <i class="fa-solid fa-user-plus"></i> Sign up
+    <div (click)="close()" class="account-item">
+        <app-button [size]="'large'" [tooltip]="'Đăng ký'" [text]="'Sign up'" [leftIcon]="'fa-solid fa-user-plus'"></app-button>
     </div>
 </div>

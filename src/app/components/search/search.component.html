@@ -9,11 +9,9 @@
         </div>
 
         <div *ngIf="isVisable" class="tooltips">
-            <app-search-result></app-search-result>
-            <app-search-result></app-search-result>
-            <app-search-result></app-search-result>
-            <app-search-result></app-search-result>
-            <app-search-result></app-search-result>
-            <app-search-result></app-search-result>
+            <div *ngFor="let product of products">
+              <app-search-result [product]="product"></app-search-result>
+            </div>
+            
         </div>
       </div>

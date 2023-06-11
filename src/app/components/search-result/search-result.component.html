@@ -1,9 +1,9 @@
 <div class="search-result">
     <div class="img">
-        <img class="img-style" src="../../../assets/storage/image/ao1.webp" alt="">
+        <img class="img-style" [src]="'../../../assets/storage/image/' + product.image" alt="">
     </div>
     <div class="content">
-        <p class="name">Đây là áo giành cho nam</p>
-        <p class="price">200.000đ</p>
+        <p class="name">{{ product.name }}</p>
+        <p class="price">Giá: {{ product.price }}đ</p>
     </div>
 </div>
