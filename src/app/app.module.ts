@@ -24,6 +24,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import '@angular/localize/init';
+import { MainItemComponent } from './components/main-item/main-item.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MainSPComponent } from './main-sp/main-sp.component';
 
 
 
@@ -47,13 +50,17 @@ import '@angular/localize/init';
     SearchResultComponent,
     CategoriesComponent,
     AccountComponent,
+    MainItemComponent,
+    MainSPComponent,
+    
   ],
   imports: [
     AppRoutingModule,
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

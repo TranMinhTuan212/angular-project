@@ -1,0 +1,116 @@
+<!-- <div>
+    <img src="/assets/storage/image/banner_image.webp" alt="">  
+  </div> -->
+
+<div class="container text-center">   
+  <div>
+    <p>thời trang công sở</p>
+  </div>
+  <div class="row">
+    <div class="col-md-2 banner-page">
+      <div class="img-none">
+        <img src="/assets/storage/image/banner-image-1.webp" alt="">  
+      </div>
+    </div>
+      <div class="col-md-10">
+        <owl-carousel-o [options]="customOptions"> 
+          <ng-template carouselSlide class="col-sm-3 banner-page" *ngFor="let items of mainItem">
+            <div class="full">
+              <ul class="image-Big" >
+                <li><a href=""><img src="{{items.image}}" alt="">
+              <div class="nameIcon">
+                    <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+             </div>
+             <div class="dscription">
+                   <p>{{items.total}}</p>         
+             </div>
+             <div class="dscription1"><p>{{items.discount}}</p></div>
+                </a>       
+                </li>
+              </ul>
+                  <div class="detail">                    
+                    <p class="nameitem">{{items.name}}</p>
+                    <p class="price">{{items.price}}</p>                   
+                      <div class="row">
+                        <div class="col" *ngFor="let items of mainItem">
+                          <a href="" class="imgitem"><img src="{{items.image  }}" alt=""></a> 
+                        </div>
+                      </div>                
+              </div> 
+            </div>
+          </ng-template>  
+        </owl-carousel-o>         
+      </div>
+    </div>  
+    <!-- nữ -->
+    <div class="row">
+      <div class="col-md-2 banner-page">
+        <div class="img-none">
+          <img src="/assets/storage/image/banner-image-1.webp" alt="">  
+        </div>
+      </div>
+        <div class="col-md-10">
+          <owl-carousel-o [options]="customOptions"> 
+            <ng-template carouselSlide class="col-sm-3 banner-page" *ngFor="let items of maingirl">
+              <div class="full">
+                <ul class="image-Big" >
+                  <li><a href=""><img src="{{items.image}}" alt="">
+                <div class="nameIcon">
+                      <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+               </div>
+               <div class="dscription">
+                     <p>{{items.total}}</p>         
+               </div>
+               <div class="dscription1"><p>{{items.discount}}</p></div>
+                  </a>       
+                  </li>
+                </ul>
+                    <div class="detail">                    
+                      <p class="nameitem">{{items.name}}</p>
+                      <p class="price">{{items.price}}</p>                   
+                      <div class="row" >
+                        <div class="col" *ngFor="let items of maingirl">
+                          <div class="function-container">
+                            <a href="" class="imgitem function"><img src="{{items.image}}" alt=""></a> 
+                          </div>
+                        </div>
+                      </div> 
+                                     
+                      <!-- <a href="" class="imgitem"><img src="{{items.imageItem}}" alt=""></a>                 -->
+                </div> 
+                
+              </div>
+            </ng-template>  
+          </owl-carousel-o>         
+        </div>
+      </div>
+  </div> 
+
+
+<!-- <div class="container text-center">    
+  <owl-carousel-o [options]="customOptions"> 
+    <ng-template carouselSlide class="" *ngFor="let items of mainItem">
+     <div> <a href="" class="imgitem"><img src="{{items.imageItem}}" alt=""></a> </div>   
+    </ng-template>  
+  </owl-carousel-o>  -->
+<!-- <owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide class="col-sm-3 banner-page" *ngFor="let items of product">
+    <div class="row row-cols-2 g-2 ">
+              
+        <div class="detail">                    
+          <p class="nameitem">{{items.name}}</p>
+          <img src="{{items.image}}" alt="">    
+      </div> 
+    </div> 
+  </ng-template>  
+</owl-carousel-o> -->
+
+<!-- <div class="container text-center">    
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide class="col-sm-3 banner-page">
+    <div class="row row-cols-4 g-2">
+       <app-children *ngFor="let demo of mainItem; trackby: trackMain"></app-children> 
+       <app-main-sp *ngFor="let SanPham of product; trackBy: trackByProduct" [product]="SanPham"></app-main-sp>       
+    </div> 
+  </ng-template>  
+</owl-carousel-o> -->

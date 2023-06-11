@@ -1,0 +1,33 @@
+<div class="fix">
+    <div class="container text-center" >
+        <div class="menu-list">
+            <label for="rd1" class="tab-item" data-tab="1"><div class="item-menu-dt item-female-menu-dt active "> Nam</div></label>
+    
+            <label for="rd2" class="tab-item" data-tab="2"><div class="item-menu-dt item-female-menu-dt active "> Nữ</div></label>
+        </div>
+          <input type="radio" name="radio" id="rd1">
+          <input type="radio" name="radio" id="rd2">
+          <div class="tab-content1 text1 container " data-tab="1">
+              <h3 class="post-title">
+                <div class="row full" >
+                    <div class="col spImage" *ngFor="let sp of sanPhamNam">
+                        <a  href=""><img src="{{sp.image}}" alt=""></a>
+                          
+                    </div>
+                  </div>
+              </h3>
+          </div>
+          <div class="tab-content text2 container " data-tab="2">
+              <h3 class="post-title ">
+                  <div class="row full" >
+                      <div class="col spImage" *ngFor="let sp of sanPham">
+                          <a  href=""><img src="{{sp.image}}" alt=""></a>
+                           
+                      </div>
+                    </div>
+              </h3>
+          </div>
+    </div>
+</div>
+
+       

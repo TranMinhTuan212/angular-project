@@ -6,6 +6,8 @@ import { MenComponent } from './pages/men/men.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ChildrenComponent } from './pages/children/children.component';
+import { MainItemComponent } from './components/main-item/main-item.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'children', component: ChildrenComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
+
+
 
 ];
 

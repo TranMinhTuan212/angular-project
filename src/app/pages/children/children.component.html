@@ -1,11 +1,42 @@
-
-
-<app-header></app-header>
-
-<app-background></app-background>
-
-<app-main></app-main>
-
-<app-contact></app-contact>
-
-<app-footer></app-footer>
+              
+      <app-main-item></app-main-item>
+                <!-- <div >
+                    <div class="image"> <a href=""><img src="{{mainItem.image}}" alt=""></a></div> 
+                    <div class="name"><p class="nameitem">{{mainItem.name}}</p></div>  
+                    <div> {{mainItem.price}} <span>{{mainItem.discount}}</span></div> 
+                    <div class="imageMin"><a href=""><img src="{{mainItem.imageItem}}" alt=""></a> </div> 
+                    <button>select</button>
+                </div>          
+                          -->
+   <!-- <div class="container text-center">    
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide class="col-sm-3 banner-page" *ngFor="let items of item">
+                <div class="row row-cols-2 g-2 ">
+                    <img src="{{items.image}}" alt="">          
+                    <div class="detail">                    
+                      <p class="nameitem">{{items.name}}</p>
+                      <p>{{items.price}}</p> 
+                      <a href="" class="imgitem"><img src="{{items.imageItem}}" alt="">  </a>             
+                  </div> 
+                </div> 
+              </ng-template>  
+            </owl-carousel-o> -->
+            <!-- <ngb-carousel > 
+                <ng-template ngbSlide> 
+              <div class="picsum-img-wrapper">
+                        <img [src]="mainItem" alt="Random first slide" />
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div> 
+                <div class="row row-cols-2 g-2 picsum-img-wrapper ">
+                  <img [src]="mainItem" alt="Random first slide" style="width: 100%;"/>       
+                  <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+              </div> 
+                </ng-template>
+            </ngb-carousel>
+          -->
